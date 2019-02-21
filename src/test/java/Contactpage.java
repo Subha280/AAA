@@ -1,3 +1,5 @@
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 import java.io.File;
 import java.io.FileInputStream;
@@ -39,7 +41,7 @@ public class Contactpage
 	public void imageDisplayed() 
 	{
 		WebElement img = wd.findElement(By.id("contact-cover"));
-		assertTrue(wd.findElement(By.cssSelector("img#contact-cover")).isDisplayed());
+		AssertJUnit.assertTrue(wd.findElement(By.cssSelector("img#contact-cover")).isDisplayed());
 	    System.out.println("Image Displayed");
 	}
 	@Test (priority=2)	

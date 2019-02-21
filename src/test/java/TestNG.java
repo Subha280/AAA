@@ -1,4 +1,6 @@
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +49,7 @@ public class TestNG
 		{
 			wd.get("C:/Users/Sriram/Desktop/Youtube-Life'sexciting/Automation_Handout_Bundle/index.html");
 			WebElement img = wd.findElement(By.id("home-cover"));
-		    assertTrue(wd.findElement(By.id("home-cover")).isDisplayed());
+		    AssertJUnit.assertTrue(wd.findElement(By.id("home-cover")).isDisplayed());
 		    System.out.println("Image Displayed");
 		}
 		
